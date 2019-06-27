@@ -32,8 +32,7 @@ var nestedValue = mjp(path, obj);
 console.log(nestedValue); // 4
 
 // You can set a third argument to get the nth parent from the path
-var nestedValueFirstParent = mjp(path, obj, 1);
-
-console.log(nestedValueFirstParent); // {z: 4}
+var nestedValueFirstParent = mjp(path, obj, 1); // {z: 4}
+var nestedValueSecondParent = mjp(path, obj, 2); // [{"z":4}]
 
 ```
