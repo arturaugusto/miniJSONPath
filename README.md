@@ -4,6 +4,7 @@
 
 ```javascript
 // code (that's all):
+
 var mjp = (p, o) => p.split(/\.|\[|\]/).filter((x) => !!x).reduce((a, c) => a[c], o);
 
 // usage:
@@ -24,10 +25,10 @@ var obj = {
   ]
 };
 
-var path = 'y[0][0].z'
+var path = 'y[0][0].z';
 
-var nestedValue = mjp('y[0][0].z', obj)
+var nestedValue = mjp('y[0][0].z', obj);
 
-console.log(nestedValue) // 4
+console.log(nestedValue); // 4
 
 ```
