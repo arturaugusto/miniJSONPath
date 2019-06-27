@@ -27,7 +27,7 @@ var obj = {
 
 var path = 'y[0][0].z';
 
-var nestedValue = mjp('y[0][0].z', obj);
+var nestedValue = mjp(path, obj);
 
 console.log(nestedValue); // 4
 
